@@ -1,0 +1,45 @@
+.notfound-container {
+  background-image: url("https://i.ibb.co/pj5JgMx/404page-not-found.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+.notfound-container-text {
+  color: white;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.notfound-container-text-small {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.notfound-container .btn {
+  margin-top: 5%;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+  .notfound-container .col-md-6 {
+    width: 100% !important;
+  }
+
+  .notfound-container-col-2 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .notfound-container-text {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .notfound-container-text-small {
+    font-size: 25px;
+  }
+}

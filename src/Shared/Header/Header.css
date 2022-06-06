@@ -1,0 +1,9 @@
+.navbar-row-container {
+  min-width: 100%;
+}
+@media screen and (max-width: 992px) {
+  .navbar-row-container .nav-item:last-child button {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

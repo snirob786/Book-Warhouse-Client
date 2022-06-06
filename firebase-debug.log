@@ -1,0 +1,136 @@
+[debug] [2022-05-13T15:13:58.333Z] ----------------------------------------------------------------------
+[debug] [2022-05-13T15:13:58.335Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nirob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2022-05-13T15:13:58.336Z] CLI Version:   10.8.0
+[debug] [2022-05-13T15:13:58.336Z] Platform:      win32
+[debug] [2022-05-13T15:13:58.336Z] Node Version:  v16.13.1
+[debug] [2022-05-13T15:13:58.337Z] Time:          Fri May 13 2022 21:13:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-13T15:13:58.337Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-13T15:13:58.426Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-13T15:13:58.426Z] > authorizing via signed-in user (snirob786@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nirob\Desktop\Bookwarehouse\bookwarehouse-client
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-13T15:15:02.663Z] Using project from CLI flag: lunar-box-212307
+[debug] [2022-05-13T15:15:02.666Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 [none]
+[debug] [2022-05-13T15:15:03.215Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 200
+[debug] [2022-05-13T15:15:03.215Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 {"projectId":"lunar-box-212307","projectNumber":"710740829179","displayName":"Login With google","name":"projects/lunar-box-212307","resources":{"hostingSite":"lunar-box-212307"},"state":"ACTIVE"}
+[info] i  Using project lunar-box-212307 (Login With google) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-05-13T15:15:34.679Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-05-13T15:15:34.940Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-05-13T15:15:34.940Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.1","browserURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Nirob\Desktop\Bookwarehouse\bookwarehouse-client 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=440495730&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-05-13T15:15:45.977Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"e58f03abd85991ea0ab9","redirect_uri":"http://localhost:9005","state":"440495730"}
+[debug] [2022-05-13T15:15:46.558Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 13 May 2022 15:15:47 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"046af2b97792b006f7f7e729ff206f08\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"E0DF:10BE:1F97A7:25348F:627E7622"}
+[debug] [2022-05-13T15:15:46.566Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-05-13T15:15:47.184Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-05-13T15:15:47.184Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"snirob786","id":17748935,"node_id":"MDQ6VXNlcjE3NzQ4OTM1","avatar_url":"https://avatars.githubusercontent.com/u/17748935?v=4","gravatar_id":"","url":"https://api.github.com/users/snirob786","html_url":"https://github.com/snirob786","followers_url":"https://api.github.com/users/snirob786/followers","following_url":"https://api.github.com/users/snirob786/following{/other_user}","gists_url":"https://api.github.com/users/snirob786/gists{/gist_id}","starred_url":"https://api.github.com/users/snirob786/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/snirob786/subscriptions","organizations_url":"https://api.github.com/users/snirob786/orgs","repos_url":"https://api.github.com/users/snirob786/repos","events_url":"https://api.github.com/users/snirob786/events{/privacy}","received_events_url":"https://api.github.com/users/snirob786/received_events","type":"User","site_admin":false,"name":"S. R. Nirob","company":null,"blog":"","location":"Dhaka","email":"snirob786@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":11,"public_gists":0,"followers":1,"following":0,"created_at":"2016-03-09T17:28:21Z","updated_at":"2022-05-07T08:21:18Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":30200,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as snirob786 
+[info] 
+[debug] [2022-05-13T15:16:35.317Z] ----------------------------------------------------------------------
+[debug] [2022-05-13T15:16:35.319Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Nirob\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2022-05-13T15:16:35.319Z] CLI Version:   10.8.0
+[debug] [2022-05-13T15:16:35.319Z] Platform:      win32
+[debug] [2022-05-13T15:16:35.319Z] Node Version:  v16.13.1
+[debug] [2022-05-13T15:16:35.320Z] Time:          Fri May 13 2022 21:16:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-05-13T15:16:35.320Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-13T15:16:35.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-13T15:16:35.402Z] > authorizing via signed-in user (snirob786@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Nirob\Desktop\Bookwarehouse\bookwarehouse-client
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-05-13T15:16:38.029Z] Using project from CLI flag: lunar-box-212307
+[debug] [2022-05-13T15:16:38.033Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 [none]
+[debug] [2022-05-13T15:16:38.776Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 200
+[debug] [2022-05-13T15:16:38.776Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lunar-box-212307 {"projectId":"lunar-box-212307","projectNumber":"710740829179","displayName":"Login With google","name":"projects/lunar-box-212307","resources":{"hostingSite":"lunar-box-212307"},"state":"ACTIVE"}
+[info] i  Using project lunar-box-212307 (Login With google) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-05-13T15:16:44.486Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-05-13T15:16:44.701Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-05-13T15:16:44.702Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.8.1","browserURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.8.1/firebase.tgz"},"live":{"version":"9.8","browserURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.8.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\Nirob\Desktop\Bookwarehouse\bookwarehouse-client 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=898904774&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-05-13T15:16:51.149Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"a43a151b26274b24c645","redirect_uri":"http://localhost:9005","state":"898904774"}
+[debug] [2022-05-13T15:16:51.777Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 13 May 2022 15:16:52 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"f9b9a70d49a7b3986142415bd56f4273\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com *.actions.githubusercontent.com wss://*.actions.githubusercontent.com online.visualstudio.com/api/v1/locations github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"E11A:4F01:27F9FE:2E4A16:627E7664"}
+[debug] [2022-05-13T15:16:51.786Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-05-13T15:16:52.788Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-05-13T15:16:52.788Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"snirob786","id":17748935,"node_id":"MDQ6VXNlcjE3NzQ4OTM1","avatar_url":"https://avatars.githubusercontent.com/u/17748935?v=4","gravatar_id":"","url":"https://api.github.com/users/snirob786","html_url":"https://github.com/snirob786","followers_url":"https://api.github.com/users/snirob786/followers","following_url":"https://api.github.com/users/snirob786/following{/other_user}","gists_url":"https://api.github.com/users/snirob786/gists{/gist_id}","starred_url":"https://api.github.com/users/snirob786/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/snirob786/subscriptions","organizations_url":"https://api.github.com/users/snirob786/orgs","repos_url":"https://api.github.com/users/snirob786/repos","events_url":"https://api.github.com/users/snirob786/events{/privacy}","received_events_url":"https://api.github.com/users/snirob786/received_events","type":"User","site_admin":false,"name":"S. R. Nirob","company":null,"blog":"","location":"Dhaka","email":"snirob786@gmail.com","hireable":null,"bio":null,"twitter_username":null,"public_repos":11,"public_gists":0,"followers":1,"following":0,"created_at":"2016-03-09T17:28:21Z","updated_at":"2022-05-07T08:21:18Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":30200,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as snirob786 
+[info] 
+[debug] [2022-05-13T15:17:36.157Z] >>> [apiv2][query] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key type=owner
+[debug] [2022-05-13T15:17:36.636Z] <<< [apiv2][status] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key 404
+[debug] [2022-05-13T15:17:36.636Z] <<< [apiv2][body] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
+[debug] [2022-05-13T15:17:45.781Z] >>> [apiv2][query] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key type=owner
+[debug] [2022-05-13T15:17:46.274Z] <<< [apiv2][status] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key 404
+[debug] [2022-05-13T15:17:46.275Z] <<< [apiv2][body] GET https://api.github.com/repos/ProgrammingHeroWC4/warehouse-management-client-side-snirob786/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/reference/actions#get-a-repository-public-key"}
