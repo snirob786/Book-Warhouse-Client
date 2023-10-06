@@ -1,7 +1,5 @@
-import { isEmpty } from "@firebase/util";
-
 const setToken = async (uid) => {
-  const url = `https://sheltered-beach-08896.herokuapp.com/logintoken`;
+  const url = `${process.env.REACT_APP_BACKEND_URL}/logintoken`;
   await fetch(url, {
     method: "POST",
     headers: {
@@ -12,7 +10,6 @@ const setToken = async (uid) => {
     .then((res) => res.json())
     .then((result) => {
       localStorage.setItem("accessToken", result.accessToken);
-      console.log("set token used");
     });
 };
 
@@ -21,9 +18,7 @@ const useGetToken = (uid) => {
   if (accessToken) {
     return accessToken;
   } else {
-    // setToken(uid);
-    console.log(localStorage.getItem("accessToken"));
-    console.log("your token not found", uid);
+    setToken(uid);
   }
 };
 

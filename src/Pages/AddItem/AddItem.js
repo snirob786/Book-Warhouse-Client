@@ -13,7 +13,7 @@ const AddItem = () => {
   const onSubmit = (data) => {
     reset();
     data.addedby = currentUser.uid;
-    const url = `https://sheltered-beach-08896.herokuapp.com/book`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book`;
     fetch(url, {
       method: "POST",
       headers: {

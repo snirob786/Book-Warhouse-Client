@@ -1,7 +1,7 @@
 {
   "name": "books-warehouse",
   "version": "0.1.0",
-  "homepage": "bookswarehouse.ideamount.com",
+  "homepage": "",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",

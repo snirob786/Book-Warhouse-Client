@@ -43,7 +43,7 @@ const InventoryContainer = ({ myitem, manage, myInventory }) => {
   };
   const handleDeleteItem = (id) => {
     getBookDetails(id);
-    const url = `https://sheltered-beach-08896.herokuapp.com/book/${id}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book/${id}`;
     fetch(url, {
       method: "DELETE",
     })
@@ -55,7 +55,7 @@ const InventoryContainer = ({ myitem, manage, myInventory }) => {
   };
 
   const getBookDetails = (id) => {
-    const url = `https://sheltered-beach-08896.herokuapp.com/book/${id}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => {

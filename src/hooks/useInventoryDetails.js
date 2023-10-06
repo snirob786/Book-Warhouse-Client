@@ -4,7 +4,7 @@ const useInventoryDetail = (bookId) => {
   const [book, setBook] = useState({});
 
   useEffect(() => {
-    const url = `https://sheltered-beach-08896.herokuapp.com/book/${bookId}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book/${bookId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setBook(data));

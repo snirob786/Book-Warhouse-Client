@@ -13,7 +13,7 @@ const SocialLogin = () => {
   if (user) {
     const accessTokenStore = async () => {
       const uid = user.user.uid;
-      const url = `https://sheltered-beach-08896.herokuapp.com/logintoken`;
+      const url = `${process.env.REACT_APP_BACKEND_URL}/logintoken`;
       await fetch(url, {
         method: "POST",
         headers: {

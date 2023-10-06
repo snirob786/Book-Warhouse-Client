@@ -6,7 +6,7 @@ import Blog from "./Blog/Blog";
 import Footer from "../../Shared/Footer/Footer";
 
 const Blogs = ({ page }) => {
-  const [blogs, setBlogs] = useBlogs();
+  const [blogs] = useBlogs();
   return (
     <div>
       <Header></Header>

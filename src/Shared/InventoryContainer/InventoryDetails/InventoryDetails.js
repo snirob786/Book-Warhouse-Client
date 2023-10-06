@@ -15,7 +15,7 @@ const InventoryDetails = () => {
 
   const handleDelivery = () => {
     book.quantity = parseInt(book.quantity) - 1;
-    const url = `https://sheltered-beach-08896.herokuapp.com/book/${id}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {
@@ -33,7 +33,7 @@ const InventoryDetails = () => {
 
   const handleUpdateQuantity = (data) => {
     book.quantity = parseInt(book.quantity) + parseInt(data.quantity);
-    const url = `https://sheltered-beach-08896.herokuapp.com/book/${id}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/book/${id}`;
     fetch(url, {
       method: "PUT",
       headers: {

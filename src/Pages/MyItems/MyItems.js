@@ -19,12 +19,12 @@ const MyItems = () => {
   useEffect(() => {
     const getInventory = async () => {
       const uid = user?.uid;
-      const url = `https://sheltered-beach-08896.herokuapp.com/mybooks?uid=${uid}`;
+      const url = `${process.env.REACT_APP_BACKEND_URL}/mybooks?uid=${uid}`;
       try {
         const { data } = await axiosPrivate.get(url);
         setInventory(data);
       } catch (error) {
-        console.log(error.message);
+        console.error(error.message);
         if (error.response.status === 401 || error.response.status === 403) {
           signOut(auth);
           navigate("/login");
